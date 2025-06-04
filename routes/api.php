@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__ . '/api/v1.php';
 require __DIR__ . '/api/v2.php';
-
+require __DIR__ . '/api/v3.php';
 
 Route::get('/user', function (Request $request) {
     return $request->user();
