@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Tasks;
+namespace App\Http\Controllers\Controller;
 use App\Http\Requests\StoreTasksRequest;
 use App\Http\Requests\UpdateTasksRequest;
 
@@ -13,7 +15,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-        //
+        return Tasks::all();
     }
 
     /**
